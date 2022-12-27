@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Inter;
+  /* font-size: 40px; */
+}
+.wrapper {
+  margin: 4%;
+  /* box-shadow: 0px 0px 5vw black; */
+  padding: 0 5%;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 10% 5%;
+  padding: 3%;
+}
+header img{
+  width: 5vw;
+}
+a {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+main {
+  position: relative;
+}
+nav {
+  display: flex;
+  width: 50%;
+}
+.show {
+  display: none;
+}
+.close {
+  display: none;
+}
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+ul li {
+  cursor: pointer;
+  font-size: 15px;
+}
+ul li:hover {
+  color: hsl(35, 77%, 62%);
+}
+img.desktop-picture {
+  width: 70%;
+  margin: 0 3vw;
+}
+
+img.mobile-picture {
+  display: none;
+}
+
+aside {
+  position: absolute;
+  right: 0%;
+  top: 0;
+  background-color: black;
+  max-width: 35%;
+  color: white;
+  height: 80vh;
+  max-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  font-size: 15px;
+}
+.aside {
+  padding: 10% 0;
+}
+.aside:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+.aside:nth-child(3) {
+  border-bottom: 1px solid white;
+}
+
+aside h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 50px;
+}
+
+aside a {
+  color: white;
+  font-size: 20px;
+}
+aside a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+div.paragraph {
+  display: flex;
+  height: 30vh;
+  padding: 5vh 2vh 5vh 10vh;
+  margin-bottom: 10vh;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+div.h1 {
+  width: 25%;
+}
+div.button {
+  width: 40%;
+  margin-left: 5vw;
+}
+div.button p {
+  line-height: 200%;
+  font-size: 20px;
+}
+button {
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  font-size: 30px;
+  padding: 2vh 5vh;
+  margin-top: 5vh;
+  border: none;
+  letter-spacing: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
+}
+article {
+  margin-top: 5vh;
+  display: flex;
+  font-size: 15px;
+}
+article img {
+  height: 20vh;
+}
+div.article {
+  display: flex;
+  margin-bottom: 10vh;
+}
+div.text {
+  margin-left: 1vw;
+}
+div.text span {
+  font-weight: 900;
+  font-size: 50px;
+  color: hsl(233, 8%, 79%);
+}
+div.text a:hover {
+  color: hsl(5, 85%, 63%);
+}
+div.text a {
+  color: black;
+  font-size: 30px;
+}
+div.attribution{
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+ 
+  div.wrapper {
+    margin: 0;
+  }
+  header {
+    margin: 5% 10% 5% 0;
+  }
+  header img {
+    width: 10vw;
+  }
+  .desktop-picture {
+    display: none;
+  }
+  img.mobile-picture {
+    display: block;
+    width: 90vw;
+    /* height: 10%; */
+  }
+  nav {
+    margin: 0;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    z-index: 1;
+    padding: 35vh 0;
+    /* box-shadow: -50vw 0 1000px black; */
+  }
+  ul {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+  }
+  ul li{
+    font-size: 20px;
+
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    width: auto;
+    height: 3%;
+    top: 5%;
+    right: 5%;
+    z-index: 2;
+  }
+  aside {
+    position: static;
+    margin-top: 50vh;
+    max-width: 90%;
+    margin-bottom: 5vh;
+    padding: 3vh 0 0 2vh;
+    justify-content: space-between;
+  }
+  .aside {
+    padding-top: 0;
+  }
+  .aside a{
+    font-size: 20px;
+  }
+  .aside p{
+    font-size: 15px;
+  }
+  aside h2{
+    font-size: 30px;
+  }
+  div.paragraph {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+  }
+  div.h1 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  div.button {
+    width: 90%;
+  }
+  div.button p{
+    font-size: 20px;
+    
+  }
+  button {
+    padding: 2vh 3vh;
+    letter-spacing: 4px;
+  }
+  div.article {
+    flex-direction: column;
+  }
+  article {
+    margin: 2vh;
+    font-size: 15px;
+  }
+  div.text{
+    margin-left: 3vw;
+  }
+  div.text span{
+    font-size: 30px;
+  }
+  div.text a{
+    font-size: 18px;
+  }
+  div.text p{
+    font-size: 15px;
+  }
+  div.attribution{
+    font-size: 10px;
+  }
+}
+@media (max-width: 740px) and (orientation: landscape){
+  nav{
+    width: 50vw;
+    padding: 10vh 0;
+  }
+  aside{
+    height: 150vh;
+  }
+  aside{
+    margin-top: 80vh
+  }
+}
